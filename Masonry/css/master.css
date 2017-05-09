@@ -1,0 +1,81 @@
+@import "../../variables.css";
+
+html, body {
+  font: var(--OpenSans);
+  line-height: var(--lineHeight);
+  margin: auto;
+}
+#theSystem {
+  background: var(--grey);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+#theGrid {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height:auto;
+  justify-content: center;
+  padding-bottom: 5rem;
+  width: auto;
+}
+section.sectors {
+  margin: 0rem 1rem;
+}
+div.tile{
+  border: var(--border);
+  background: white;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+div.tile:last-child {
+  margin-bottom: 0;
+}
+div.tile > img {
+  border: var(--border);
+  width: 97%;
+}
+div.tile > hr {
+  border: solid var(--red);
+  margin-left: 0;
+  margin-bottom: 1rem;
+  width: 25%;
+}
+div.tile > h3 {
+  font-size: 1.3888888889rem;
+  line-height: 2rem;
+  margin: 1rem 0rem;
+}
+div.tile > p {
+  line-height: 1.4444444444rem;
+  margin: 1rem 0rem;
+}
+div.tile > h5 {
+  font: var(--OpenSans);
+  margin: 1em 0em 0em;
+}
+button#load {
+  align-self: center;
+  background: white;
+  font: var(--OpenSans);
+  font-size: 1.3888888889rem;
+  font-weight: 700;
+}
+@media only screen and (min-device-width: 768px) and (min-width: 768px) {
+  #theSystem {
+    padding: 5em
+  }
+  #theGrid {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1024px), only screen and (min-device-width: 1024px) {
+  body {
+    margin: 3rem auto;
+    width: 90%;
+  }
+  #theSystem {
+    border: var(--border);
+  }
+}

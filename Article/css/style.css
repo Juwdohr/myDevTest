@@ -1,0 +1,94 @@
+@import "../../variables.css";
+html, body {
+    height: 100%;
+    width: 100%;
+    font: var(--OpenSans);
+    line-height: 1.3333333333rem;
+}
+#main {
+    margin: 2rem 5rem;
+}
+h1 {
+    font-size: 2.3888889rem;
+    font-weight: 300;
+}
+h2 {
+    font-size: 1.7777777778rem;
+    font-weight: 300;
+}
+h3 {
+    margin-top: 0.2222222222rem;
+    margin-bottom: 0.3888888889rem;
+    font-size: 1.3888888889rem;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+}
+.mainImg {
+    display: flex;
+}
+#mainImg {
+  transition: opacity 500ms ease-in-out;
+  width: inherit;
+  opacity: 0;
+}
+#mainImg.active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out;
+}
+.imgHolder {
+    height: 30rem;
+    overflow: hidden;
+    margin-bottom: 0.4444444444rem;
+    width: 100%;
+}
+.imgHolder>img {
+    max-width: 100%;
+}
+.imgInfo {
+    display: flex;
+    width: 100%;
+}
+
+.subtitle, .video-subtitle {
+    align-self: flex-start;
+    line-height: 0.5555555556rem;
+    marigin-top: 0;
+    width: 50%;
+}
+.video-subtitle {
+    width: 100%;
+}
+.moreImgs {
+    align-self: flex-start;
+    width: 50%;
+    text-align: right;
+}
+.moreImgs>img {
+    height: 2.7777777778rem;
+    width: 2.7777777778rem;
+}
+.moreImgs:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+.article1 {
+    margin-top: 5rem;
+}
+.article2 {
+    margin-top: 2rem;
+}
+article>p {
+    margin-right: 10rem;
+}
+.video {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    padding-left: 1.3333333333rem;
+}
+iframe {
+    width: 100%;
+    -ms-align-self: flex-end;
+    align-self: flex-end;
+    margin-bottom: 0.4444444444rem;
+}

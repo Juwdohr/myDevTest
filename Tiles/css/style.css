@@ -1,0 +1,118 @@
+@import "../../variables.css";
+
+html, body {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  font: var(--OpenSans);
+  line-height: var(--lineHeight);
+}
+
+article#tiles-article {
+  margin: 2em;
+}
+section.area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+section.news {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+section.inspirational {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+hr.titleDivider {
+  width: 100%;
+  border: solid 0.3888888888888889em;
+  margin-bottom: 2em;
+}
+section.area hr.titleDivider {
+  border-color: var(--red);
+}
+section.news hr.titleDivider {
+  border-color: var(--blue);
+}
+section.inspirational hr.titleDivider {
+  border-color: var(--green);
+}
+
+h2.tileTitle {
+  line-height: 1em;
+  margin-top: 0.2222222222em 0em;
+}
+h3.title {
+  font-size: 1.388888888888889em;
+  font-weight: 700;
+}
+h5.tileSubtitle {
+  font-weight: 400;
+  line-height: 1em;
+}
+p.tileInfo {
+  line-height: normal;
+  margin: 0.22222222em 0em;
+}
+
+div.tiles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+div.tiles div.tile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+div.imgCaption {
+  margin: 0.222222em;
+}
+figure.img  {
+  margin: initial;
+  max-height: 15.666667em;
+  overflow: hidden;
+  width: 100%;
+}
+figure.img img.tileImg {
+  height: 12em;
+  width: 100%;
+}
+
+@media only screen and (min-device-width: 768px) and (min-width: 768px) {
+  /*For Tablet*/
+  hr.titleDivider {
+    width: 98%;
+  }
+  div.tiles {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  div.tiles div.tile {
+    display: flex;
+    flex-direction: column;
+    width: 48.3%;
+  }
+}
+
+@media only screen and (min-width: 1025px), only screen and (min-device-width: 1025px) {
+  /*For Desktop*/
+  html, body {
+    width: 75%;
+  }
+  hr.titleDivider {
+    width: 99%;
+  }
+  div.tiles {
+    flex-direction: row;
+  }
+  div.tiles div.tile {
+    display: flex;
+    flex-direction: column;
+    width: 31.7%;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../variables.css";
+
+html, body {
+  font: var(--main-font);
+  height: 100%;
+  line-height: var(--default-line-height);
+  margin: 2em auto;
+  width: 75%;
+}
+article.tile {
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  margin: auto var(--default-margin);
+  width: 100%;
+}
+article div.video-tile {
+  margin: 0em var(--default-margin) var(--default-margin) 0em;
+  position: relative;
+}
+video#video {
+  height: auto;
+  width: 15em;
+  transition: width 1000ms ease-in-out;
+}
+video#video.playing {
+  width: 100%;
+}
+#playBtn {
+  font-size: 8.4em;
+  left: .5em;
+  top: 0;
+  position: absolute;
+}
+#playBtn:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+section.video-info {
+  margin: 0em 0em var(--default-margin)
+}
+h1.video-title {
+  font-weight: 300;
+  margin: 0em;
+}
+h5.video-type {
+  font-weight:300;
+  margin: 0em;
+  color: var(--blue);
+}
